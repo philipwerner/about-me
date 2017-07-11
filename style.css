@@ -1,10 +1,18 @@
 h1{
   font-family: 'Anton', sans-serif;
   border-style: groove;
+  border-color: red;
+}
+
+.profile-pic{
+  height: 400px;
+  width: auto;
 }
 
 h2{
   font-family: 'Montserrat', sans-serif;
+  border-style: groove;
+  border-color: blue;
 }
 
 h3{
