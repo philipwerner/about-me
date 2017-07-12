@@ -7,6 +7,9 @@ h1{
 .profile-pic{
   height: 400px;
   width: auto;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 30px;
 }
 
 h2{
@@ -18,8 +21,38 @@ h2{
 h3{
   font-family: 'Raleway', sans-serif;
   text-decoration-line: underline;
+  border: 2px inset grey;
+  border-bottom: 1px;
+  border-right: 1px;
+  width: 200px;
+  padding: 10px;
+}
+.late{
+  margin-top: 75px;
 }
 
+.early{
+  margin-top: 75px;
+}
+
+p{
+  border: 3px outset black;
+  border-top: 1px;
+  border-left: 1px;
+}
 body{
   background-color: #FFE6AC;
  }
+
+ aside{
+   border: 2px solid black;
+   display: inline-block;
+   width: 200px;
+   height: auto;
+   margin-top: 30px;
+ }
+
+.topTen{
+  border: none;
+  padding: 20px;
+}
