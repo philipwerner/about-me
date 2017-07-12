@@ -98,5 +98,16 @@ if (guessedNum != 16){
   alert('Sorry about your luck ' + username + ', my favorite number is 16.');
 }
 
+var myStates = ['Indiana', 'North Carolina', 'Arizona', 'California', 'Georgia'];
+var stateGuess = 0;
 
+while(guessedState != myStates && stateGuess < 6) {
+var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.');
+if (guessedState === myStates) {
+  alert('Great job ' + username + ', Indiana, Arizona, North Carolina, California and Georgia are all the other states I have lived in!');
+} else {
+  alert('I have never lived there. Maybe someday, but not right now.');
+}
+stateGuess++;
+}
 alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
