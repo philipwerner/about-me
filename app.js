@@ -55,8 +55,9 @@ if (fireFly === 'Y' || fireFly === 'YES') {
 }
 console.log('The user answered ' + fireFly + ' to me thinking FireFly is as good as people say');
 
-
-var guessedNum = parseInt( prompt('Let\'s see uf you can guess my favorite number.It is between 1 and 20. You have four tries and I will give you hints.'));
+var favGuess = 0;
+while(guessedNum != 16 && favGuess < 4) {
+var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite number.It is between 1 and 20. You have four tries and I will give you hints.'));
 if (guessedNum === 16) {
   alert('Great job ' + username + ' 16 is my favorite number!!');
 } else if (guessedNum < 16) {
@@ -64,3 +65,8 @@ if (guessedNum === 16) {
 } else {
   alert('Sorry ' + username + ' try again, it is lower than that.');
 }
+favGuess++;
+}
+// } while(guessedNum != 16 || favGuess === 4);
+//
+// console.log(favGuess);
