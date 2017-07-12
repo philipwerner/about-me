@@ -44,6 +44,27 @@ switch (motherUpper) {
 
 }
 console.log('The user answered ' + motherUpper + ' about me having an evil step mother.');
+
+var drinkWater = prompt(username + ', do you think I should be drinking more water?');
+var drinkUpper = drinkWater.toUpperCase();
+switch (drinkUpper) {
+  case ('Y'):
+    alert('You are probably right ' + username + ', I should drink more water.');
+    break;
+  case ('YES'):
+    alert('You are probably right ' + username + ', I should drink more water.');
+    break;
+  case ('N'):
+    alert('I like the way you think, beer is a much better option!');
+    break;
+  case ('NO'):
+    alert('I like the way you think, beer is a much better option!');
+    break;
+  default:
+
+}
+console.log('The user answered ' + drinkUpper + ' about me drinking more water');
+
 // var yoyoTricks = prompt(username + ', can I do any sweet Yo-Yo tricks?');
 // if (yoyoTricks === 'N') {
 //   alert('That is correct, but I wish I could do sweet tricks');
