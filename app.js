@@ -102,27 +102,27 @@ if (guessedNum != 16){
 console.log('The user answered ' + guessedNum + ' about my favorite number being 16.')
 
 var myStates = ['indiana', 'north carolina', 'arizona', 'california', 'georgia'];
-var stateGuess = 0;
+var stateGuess = 6;
 
-while(stateGuess < 6 || myStates[i] === guessedState) {
+while(stateGuess > 0) {
   var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
-    stateGuess++;
 
     for(var i = 0; i < myStates.length; i++){
-      if (myStates[i] === guessedState) {
-      alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
-      break;
-      break;
-      }
-      if (myStates[i] != guessedState) {
-      alert('Sorry that is not a state I have lived in. Try again.');
+      if (guessedState === myStates[i]) {
+        alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
+        stateGuess = -1;
       break;
       }
-      if (stateGuess > 6){
+      if (stateGuess > 0) {
+        stateGuess--;
+        alert('Sorry that is not a state I have lived in. Try again.');
+      }
+
+      if (stateGuess === 0){
         alert('You are out of guesses!')
       }
     }
   }
 
-console.log('The user answered ' + guessedState + ' about states I\'ve lived in.')
+console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
 // alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
