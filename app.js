@@ -103,10 +103,6 @@ function question6 () {
 
   while(favGuess > 0) {
   var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite number. It is between 1 and 20. You have four tries and I will give you hints.'));
-  //   console.log(typeof guessedNum);
-  //   if (typeof guessedNum === 'string' || typeof guessedNum === 'boolean' || typeof guessedNum === 'object'){
-  //   alert('Invalid input! All your base are belong to us!');
-  // }
   if (guessedNum === favNum) {
     alert('Great job ' + username + ' 16 is my favorite number!!');
   } else if (guessedNum < favNum) {
