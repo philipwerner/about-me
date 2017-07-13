@@ -84,9 +84,9 @@ var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite numbe
 if (guessedNum === 16) {
   alert('Great job ' + username + ' 16 is my favorite number!!');
 } else if (guessedNum < 16) {
-  alert('Sorry ' + username + ' try again, it is higher than that. You have ' + guessLeft + ' remaining.');
+  alert('Sorry ' + username + ' try again, it is higher than that.');
 } else {
-  alert('Sorry ' + username + ' try again, it is lower than that. You have ' + guessLeft + ' remaining.');
+  alert('Sorry ' + username + ' try again, it is lower than that.');
 }
 favGuess++;
 }
@@ -99,19 +99,30 @@ if (guessedNum != 16){
   alert('Sorry about your luck ' + username + ', you are out of guesses and my favorite number is 16.');
 }
 
+console.log('The user answered ' + guessedNum + ' about my favorite number being 16.')
+
 var myStates = ['indiana', 'north carolina', 'arizona', 'california', 'georgia'];
 var stateGuess = 0;
-var i = 0;
 
-// while(guessedState != myStates && stateGuess < 6) {
-// var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
-// if (guessedState === myStates) {
-//   alert('Great job ' + username + ', Indiana, Arizona, North Carolina, California and Georgia are all the other states I have lived in!');
-// } else {
-//   alert('I have never lived there. Maybe someday, but not right now.');
-// }
-// stateGuess++;
-// }
+while(stateGuess < 6 || myStates[i] === guessedState) {
+  var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
+    stateGuess++;
 
+    for(var i = 0; i < myStates.length; i++){
+      if (myStates[i] === guessedState) {
+      alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
+      break;
+      break;
+      }
+      if (myStates[i] != guessedState) {
+      alert('Sorry that is not a state I have lived in. Try again.');
+      break;
+      }
+      if (stateGuess > 6){
+        alert('You are out of guesses!')
+      }
+    }
+  }
 
-alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
+console.log('The user answered ' + guessedState + ' about states I\'ve lived in.')
+// alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
