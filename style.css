@@ -36,6 +36,16 @@ h3{
   margin-top: 75px;
 }
 
+.growing{
+  max-width: 500px;
+  display: inline;
+}
+
+.army{
+  max-width: 500px;
+  display: inline;
+}
+
 p{
   border: 3px outset black;
   border-top: 1px;

@@ -77,25 +77,29 @@ if (fireFly === 'Y' || fireFly === 'YES') {
 }
 
 var favGuess = 0;
+var favNum = 16;
 
-
-while(guessedNum != 16 && favGuess < 4) {
+while(guessedNum != favNum && favGuess < 4) {
 var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite number. It is between 1 and 20. You have four tries and I will give you hints.'));
-if (guessedNum === 16) {
+//   console.log(typeof guessedNum);
+//   if (typeof guessedNum === 'string' || typeof guessedNum === 'boolean' || typeof guessedNum === 'object'){
+//   alert('Invalid input! All your base are belong to us!');
+// }
+if (guessedNum === favNum) {
   alert('Great job ' + username + ' 16 is my favorite number!!');
-} else if (guessedNum < 16) {
+} else if (guessedNum < favNum) {
   alert('Sorry ' + username + ' try again, it is higher than that.');
-} else {
+} else if (guessedNum > favNum) {
   alert('Sorry ' + username + ' try again, it is lower than that.');
 }
 favGuess++;
 }
 
-if (guessedNum === 16) {
+if (guessedNum === favNum) {
   correctAnswer ++;
 }
 
-if (guessedNum != 16){
+if (guessedNum != favNum){
   alert('Sorry about your luck ' + username + ', you are out of guesses and my favorite number is 16.');
 }
 
@@ -106,24 +110,24 @@ var stateGuess = 6;
 
 while(stateGuess > 0){
   var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
-    for(var i = 0; i < myStates.length; i++){
-      if (myStates[i] === guessedState){
-        alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
-        stateGuess = -1;
-        correctAnswer ++;
-        break;
-      }
-    }
-      if (stateGuess > 0){
-        stateGuess--;
-        alert('Sorry that is not a state I have lived in. Try again. You have ' + stateGuess + ' tries remaining.');
-        break;
-      }
-      if (stateGuess === 0){
-        alert('You are out of guesses!')
-      }
 
+for(var i = 0; i < myStates.length; i++){
+  if (myStates[i] === guessedState){
+    alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
+    stateGuess = -1;
+    correctAnswer ++;
+    break;
+  }
+}
+  if (stateGuess > 0){
+    stateGuess--;
+    alert('Sorry that is not a state I have lived in. Try again. You have ' + stateGuess + ' tries remaining.');
   }
 
-console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
+  if (stateGuess === 0){
+    alert('You are out of guesses!')
+  }
+}
+
 alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
+console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
