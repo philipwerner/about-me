@@ -106,18 +106,18 @@ var stateGuess = 6;
 
 while(stateGuess > 0) {
   var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
-
     for(var i = 0; i < myStates.length; i++){
       if (guessedState === myStates[i]) {
         alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
         stateGuess = -1;
+        correctAnswer ++;
       break;
       }
       if (stateGuess > 0) {
         stateGuess--;
-        alert('Sorry that is not a state I have lived in. Try again.');
+        alert('Sorry that is not a state I have lived in. Try again. You have ' + stateGuess + ' tries remaining.');
+        break;
       }
-
       if (stateGuess === 0){
         alert('You are out of guesses!')
       }
@@ -125,4 +125,4 @@ while(stateGuess > 0) {
   }
 
 console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
-// alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
+alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
