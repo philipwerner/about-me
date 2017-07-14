@@ -6,6 +6,63 @@ alert('Hello ' + username + '. Lets play a quick game! Please answer Y/N to the 
 console.log('The user said their name is ' +username);
 var correctAnswer = 0;
 
+// // Questions in Array
+// // Response
+// var respArray = ['Correct, I cannot do any sweet yo-yo tricks. ', 'I\'m sorry, but I cannot do any yo-yo tricks. ', 'Correct, I do not have an evil stepmother. She is an amazing lady!!', 'Nah, no evil stepmother here. ', 'Yes.  Yes I should be. ', 'I wish I didn\'t, a beer and a shot of Jameson sounds good. ', 'Of course I am, aren\'t you? ', 'Wrong, House Slitherin for LYFE!! ', 'Absolutly, it is in fact as awesome as everyone thinks. ', 'GO DIE '];
+//
+// // Questions
+// var  yoyoTricks = 'Do I know any sweet yo-yo tricks?';
+// var stepMother = 'Do I have an evil stepmother?';
+// var water = 'Should I be drinking more water?';
+// var harryPotter = 'Am I just a little too obsessed with Harry Potter?';
+// var fireFly = 'Do I think the Firefly TV series is as good as people say?';
+//
+// var quesArray = [yoyoTricks, stepMother, water, harryPotter, fireFly];
+//
+// // User Answer boolean
+// var possAns = ['Y', 'YES', 'N', 'NO'];
+//
+// // Question 1
+// var userResponse = prompt(quesArray[0]).toUpperCase();
+// if (userResponse === possAns[2 || 3]){
+//   alert(respArray[0]);
+//   correctAnswer++;
+// } else {
+//   alert(respArray[1]);
+// }
+// // Question 2
+// var userResponse = prompt(quesArray[1]).toUpperCase();
+// if (userResponse === possAns[2 || 3]){
+//   alert(respArray[2]);
+//   correctAnswer++;
+// } else {
+//   alert(respArray[3]);
+// }
+// // Question 3
+// var userResponse = prompt(quesArray[2]).toUpperCase();
+// if (userResponse === possAns[0 || 1]){
+//   alert(respArray[4]);
+//   correctAnswer++;
+// } else {
+//   alert(respArray[5]);
+// }
+// // Question 4
+// var userResponse = prompt(quesArray[3]).toUpperCase();
+// if (userResponse === possAns[0 || 1]){
+//   alert(respArray[6]);
+//   correctAnswer++;
+// } else {
+//   alert(respArray[7]);
+// }
+// // Question 5
+// var userResponse = prompt(quesArray[4]).toUpperCase();
+// if (userResponse === possAns[0 || 1]){
+//   alert(respArray[8]);
+//   correctAnswer++;
+// } else {
+//   alert(respArray[9]);
+// }
+
 // Question 1
 function question1 (){
   var yoyoTricks = prompt('Can I do any sweet Yo-Yo tricks?').toUpperCase();
@@ -152,34 +209,3 @@ question7();
 
 alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
 console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
-
-
-// Questions in Array
-// Response
-var respArray = ['Correct, I cannot do any yo-yo tricks. ', 'No, I cannot do any yo-yo tricks. ', 'Correct, I do not have an evil stepmother. ', 'Nah, no evil stepmother here. ', 'Yes.  Yes I should be. ', 'Wrong, I really need to drink water. ', 'Of course I am, aren\'t you? ', 'Wrong, House Slitherin for LYFE!! ', 'Absolutly, it is in fact as awesome as everyone thinks. ', 'GO DIE '];
-
-// Questions
-var  yoyoTricks = 'Do I know any sweet yo-yo tricks?';
-var stepMother = 'Do I have an evil stepmother?';
-var water = 'Should I be drinking more water?';
-var harryPotter = 'Am I just a little too obsessed with Harry Potter?';
-var fireFly = 'Do I think the Firefly TV series is as good as people say?';
-
-var quesArray = [yoyoTricks, stepMother, water, harryPotter, fireFly];
-
-// User Answer boolean
-var possAns = ['Y', 'YES', 'N', 'NO'];
-
-// var userResponse = prompt(quesArray[i]).toUpperCase();
-// if (userResponse === possAns[i]){
-//   alert(respArray[i]);
-// }
-
-
-
-var userResponse = prompt(quesArray[0]).toUpperCase();
-if (userResponse === possAns[2 || 3]){
-  alert(respArray[0]);
-} else {
-  alert(respArray[1]);
-}
