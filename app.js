@@ -183,7 +183,6 @@ question6();
 function question7 () {
   var myStates = ['indiana', 'north carolina', 'arizona', 'california', 'georgia'];
   var stateGuess = 6;
-
   while(stateGuess > 0){
     var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
 
@@ -204,8 +203,8 @@ function question7 () {
       alert('You are out of guesses!')
     }
   }
+  console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
 }
 question7();
 
 alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
-console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
