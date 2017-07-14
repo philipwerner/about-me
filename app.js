@@ -155,24 +155,24 @@ question5();
 
 // Question 6
 function question6 () {
-  var favGuess = 4;
-  var favNum = 16;
 
+  var favGuess = 4;
   while(favGuess > 0) {
-  var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite number. It is between 1 and 20. You have four tries and I will give you hints.'));
-  if (guessedNum === favNum) {
-    alert('Great job ' + username + ' 16 is my favorite number!!');
-  } else if (guessedNum < favNum) {
-    alert('Sorry ' + username + ' try again, it is higher than that.');
-  } else if (guessedNum > favNum) {
-    alert('Sorry ' + username + ' try again, it is lower than that.');
+    var favNum = 16;
+    var guessedNum = parseInt( prompt('Let\'s see if you can guess my favorite number. It is between 1 and 20. You have four tries and I will give you hints.'));
+    if (guessedNum === favNum) {
+      alert('Great job ' + username + ' 16 is my favorite number!!');
+      favGuess = -1;
+      correctAnswer++;
+    } else if (guessedNum < favNum) {
+      favGuess--;
+      alert('Sorry ' + username + ' try again, it is higher than that. You have ' + favGuess + ' attempts left!');
+    } else if (guessedNum > favNum) {
+      favGuess--;
+      alert('Sorry ' + username + ' try again, it is lower than that. You have ' + favGuess + ' attempts left!');
+    }
   }
-  favGuess--;
-  }
-  if (guessedNum === favNum) {
-    correctAnswer--;
-  }
-  if (guessedNum != favNum){
+  if (favGuess === 0){
     alert('Sorry about your luck ' + username + ', you are out of guesses and my favorite number is 16.');
   }
   console.log('The user answered ' + guessedNum + ' about my favorite number being 16.')
