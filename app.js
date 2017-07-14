@@ -156,3 +156,34 @@ question7();
 
 alert(username + ' you correctly answered ' + correctAnswer + ' out of 7 questions correctly!!');
 console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
+
+
+// Questions in Array
+// Response
+var respArray = ['Correct, I cannot do any yo-yo tricks. ', 'No, I cannot do any yo-yo tricks. ', 'Correct, I do not have an evil stepmother. ', 'Nah, no evil stepmother here. ', 'Yes.  Yes I should be. ', 'Wrong, I really need to drink water. ', 'Of course I am, aren\'t you? ', 'Wrong, House Slitherin for LYFE!! ', 'Absolutly, it is in fact as awesome as everyone thinks. ', 'GO DIE '];
+
+// Questions
+var  yoyoTricks = 'Do I know any sweet yo-yo tricks?';
+var stepMother = 'Do I have an evil stepmother?';
+var water = 'Should I be drinking more water?';
+var harryPotter = 'Am I just a little too obsessed with Harry Potter?';
+var fireFly = 'Do I think the Firefly TV series is as good as people say?';
+
+var quesArray = [yoyoTricks, stepMother, water, harryPotter, fireFly];
+
+// User Answer boolean
+var possAns = ['Y', 'YES', 'N', 'NO'];
+
+// var userResponse = prompt(quesArray[i]).toUpperCase();
+// if (userResponse === possAns[i]){
+//   alert(respArray[i]);
+// }
+
+
+
+var userResponse = prompt(quesArray[0]).toUpperCase();
+if (userResponse === possAns[2 || 3]){
+  alert(respArray[0]);
+} else {
+  alert(respArray[1]);
+}
