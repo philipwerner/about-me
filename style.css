@@ -3,12 +3,15 @@ h1{
   font-family: 'Anton', sans-serif;
   border-style: groove;
   border-color: red;
+  background: white;
 }
 h2{
   font-family: 'Montserrat', sans-serif;
   border-style: groove;
   border-color: blue;
   width: 200px;
+  background: white;
+  text-align: center;
 }
 h3{
   font-family: 'Raleway', sans-serif;
@@ -29,7 +32,7 @@ p{
   font-size: 18px;
 }
 body{
-  background-color: #FFE6AC;
+  background-color: #8AE0FF;
 }
 li{
   font-size: 26px;
@@ -69,6 +72,7 @@ li{
   position: absolute;
   right: 50px;
   bottom: 20px;
+  background: white;
 }
 .topTen{
   border: none;
@@ -80,20 +84,25 @@ li{
 .experience{
   border: 2px solid black;
   display: block;
-  width: 300px;
+  width: 350px;
   height: auto;
   margin-top: 30px;
   margin-left: 20px;
   position: absolute;
-  right: 0;
+  right: 46px;
+  background: white;
 }
 .jobs{
   border: none;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
 }
 .training{
   border:none;
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
 }
 
 /*images*/
