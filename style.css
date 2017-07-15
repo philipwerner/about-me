@@ -1,24 +1,15 @@
+/*general HTML*/
 h1{
   font-family: 'Anton', sans-serif;
   border-style: groove;
   border-color: red;
 }
-
-.profile-pic{
-  height: 400px;
-  width: auto;
-  display: inline-block;
-  margin-right: 50px;
-  margin-top: 30px;
-  border: 3px solid black;
-}
-
 h2{
   font-family: 'Montserrat', sans-serif;
   border-style: groove;
   border-color: blue;
+  width: 200px;
 }
-
 h3{
   font-family: 'Raleway', sans-serif;
   text-decoration-line: underline;
@@ -28,69 +19,83 @@ h3{
   width: 200px;
   padding: 10px;
 }
+p{
+  border: 2px outset grey;
+  display: block;
+  max-width: 500px;
+  height: auto;
+  text-align: center;
+  background: white;
+}
+body{
+  background-color: #FFE6AC;
+}
+
+/*divs*/
 .late{
   margin-top: 75px;
 }
-
 .early{
   margin-top: 75px;
 }
 
+/*sections*/
 .growing{
+  width: 500px;
+  height: auto;
   max-width: 500px;
   display: inline;
 }
-
 .army{
   max-width: 500px;
   display: inline;
 }
 
-p{
-  border: 3px outset black;
-  border-top: 1px;
-  border-left: 1px;
+
+
+/*lists*/
+
+.dogs{
+  border: 2px solid black;
+  display: inline-block;
+  width: 225px;
+  height: auto;
+  margin-top: 30px;
 }
-body{
-  background-color: #FFE6AC;
- }
-
- .dogs{
-   border: 2px solid black;
-   display: inline-block;
-   width: 200px;
-   height: auto;
-   margin-top: 30px;
- }
-
 .topTen{
   border: none;
   padding: 20px;
 }
-
 .experience{
   border: 2px solid black;
   display: inline-block;
   width: 300px;
   height: auto;
   margin-top: 30px;
-  margin-left: 30px;
-
+  margin-left: 20px;
 }
-
 .jobs{
   border: none;
   padding: 10px;
 }
-
 .training{
   border:none;
   padding: 10px;
 }
 
+/*images*/
+
 .armyPic{
   width: 340px;
   height: auto;
-  margin-left: 30px;
+  margin-left: 20px;
+  border: 3px solid black;
+}
+.profile-pic{
+  height: 400px;
+  width: auto;
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 30px;
   border: 3px solid black;
 }
