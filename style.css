@@ -1,4 +1,8 @@
 /*general HTML*/
+body{
+  background-color: #8AE0FF;
+
+}
 h1{
   font-family: 'Anton', sans-serif;
   border-style: groove;
@@ -30,9 +34,6 @@ p{
   text-align: center;
   background: white;
   font-size: 18px;
-}
-body{
-  background-color: #8AE0FF;
 }
 li{
   font-size: 26px;
