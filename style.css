@@ -8,6 +8,9 @@ h1{
   border-style: groove;
   border-color: red;
   background: white;
+  padding-left: 20px;
+  margin-bottom: 1px;
+  position: relative;
 }
 h2{
   font-family: 'Montserrat', sans-serif;
@@ -16,6 +19,7 @@ h2{
   width: 200px;
   background: white;
   text-align: center;
+  margin-top: 10px;
 }
 h3{
   font-family: 'Raleway', sans-serif;
@@ -25,27 +29,47 @@ h3{
   border-right: 1px;
   width: 200px;
   padding: 10px;
+  margin-top: 10px;
 }
 p{
   border: 2px outset grey;
   display: block;
   max-width: 700px;
   height: auto;
-  text-align: center;
+  text-align: left;
   background: white;
   font-size: 18px;
 }
 li{
   font-size: 26px;
 }
+/*nav{
+    float: left;
+    width: 100%;
+}
+nav .navigation{
+    padding: ;
+    float: left;
+    border-bottom: ;
+    list-style-type: none;
+}
+.navigation li {
+    float: left;
+}
+.navigation li a {
+    display: block;
+    height: 25px;
+    padding: 12px 18px 8px 18px;
+    vertical-align: middle;
+}*/
 
 /*divs*/
 .late{
-  margin-top: 75px;
+  margin-top: 10px;
   position: relative;
 }
 .early{
-  margin-top: 75px;
+  margin-top: 10px;
 }
 
 /*sections*/
@@ -69,10 +93,10 @@ li{
   display: block;
   width: 350px;
   height: auto;
-  margin-top: 30px;
+  margin-top: 100px;
   position: absolute;
   right: 50px;
-  bottom: 20px;
+  top: 250px;
   background: white;
 }
 .topTen{
@@ -107,6 +131,13 @@ li{
 }
 
 /*images*/
+
+.heroImage{
+  max-width: 1600px;
+  height: auto;
+  position: relative;
+  margin-top: 1px;
+}
 
 .armyPic{
   width: 340px;
