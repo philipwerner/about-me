@@ -78,7 +78,7 @@ function question1 (){
   if (yoyoTricks === 'N' || yoyoTricks ==='NO') {
     correctAnswer ++;
   }
-}
+};
 question1();
 
 // Question 2
@@ -96,7 +96,7 @@ function question2 () {
   if (stepMother === 'N' || stepMother === 'NO') {
     correctAnswer ++;
   }
-}
+};
 question2();
 
 // Question 3
@@ -114,7 +114,7 @@ function question3 () {
   if (drinkWater === 'Y' || drinkWater === 'YES') {
     correctAnswer ++;
   }
-}
+};
 question3();
 
 // Question 4
@@ -132,7 +132,7 @@ function question4 () {
   if (harryPotter === 'Y' || harryPotter === 'YES') {
     correctAnswer ++;
   }
-}
+};
 question4();
 
 // Question 5
@@ -144,13 +144,13 @@ function question5 () {
     alert(username + ' you are wrong, so so wrong.');
   } else {
     alert('Please enter Y or N. Refresh page to try again');
-  }
+  };
   console.log('The user answered ' + fireFly + ' to me thinking FireFly is as good as people say');
 
   if (fireFly === 'Y' || fireFly === 'YES') {
     correctAnswer ++;
   }
-}
+};
 question5();
 
 // Question 6
@@ -175,7 +175,7 @@ function question6 () {
   if (favGuess === 0){
     alert('Sorry about your luck ' + username + ', you are out of guesses and my favorite number is 16.');
   }
-  console.log('The user answered ' + guessedNum + ' about my favorite number being 16.')
+  console.log('The user answered ' + guessedNum + ' about my favorite number being 16.');
 }
 question6();
 
