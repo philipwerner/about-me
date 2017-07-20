@@ -3,7 +3,7 @@ var username = prompt('What is your name?');
 
 alert('Hello ' + username + '. Lets play a quick game! Please answer Y/N to the following questions.');
 
-console.log('The user said their name is ' +username);
+console.log('The user said their name is ' + username);
 var correctAnswer = 0;
 
 // // Questions in Array
@@ -66,17 +66,17 @@ var correctAnswer = 0;
 // Question 1
 function question1 (){
   var yoyoTricks = prompt('Can I do any sweet Yo-Yo tricks?').toUpperCase();
-  if (yoyoTricks === 'N' || yoyoTricks ==='NO') {
+  if (yoyoTricks === 'N' || yoyoTricks === 'NO') {
     alert(username + ', you are off to a good start, but I wish I could do sweet tricks');
   } else if (yoyoTricks === 'Y' || yoyoTricks === 'YES') {
     alert('I am sorry ' + username + ' but I am unable to do sweet tricks.');
   } else {
     alert('Please answer Y or N. Please refresh page to try again');
   }
-  console.log('The user answered ' +yoyoTricks + ' to me being able to do sweet tricks.');
+  console.log('The user answered ' + yoyoTricks + ' to me being able to do sweet tricks.');
 
-  if (yoyoTricks === 'N' || yoyoTricks ==='NO') {
-    correctAnswer ++;
+  if (yoyoTricks === 'N' || yoyoTricks === 'NO') {
+    correctAnswer++;
   }
 }
 question1();
@@ -94,7 +94,7 @@ function question2 () {
   console.log('The user answered ' + stepMother + ' to me having a evil stepmother');
 
   if (stepMother === 'N' || stepMother === 'NO') {
-    correctAnswer ++;
+    correctAnswer++;
   }
 }
 question2();
@@ -112,7 +112,7 @@ function question3 () {
   console.log('The user answered ' + drinkWater + ' to me drinking more water');
 
   if (drinkWater === 'Y' || drinkWater === 'YES') {
-    correctAnswer ++;
+    correctAnswer++;
   }
 }
 question3();
@@ -130,7 +130,7 @@ function question4 () {
   console.log('The user answered ' + harryPotter + ' to a Harry Potter obsession.');
 
   if (harryPotter === 'Y' || harryPotter === 'YES') {
-    correctAnswer ++;
+    correctAnswer++;
   }
 }
 question4();
@@ -148,7 +148,7 @@ function question5 () {
   console.log('The user answered ' + fireFly + ' to me thinking FireFly is as good as people say');
 
   if (fireFly === 'Y' || fireFly === 'YES') {
-    correctAnswer ++;
+    correctAnswer++;
   }
 }
 question5();
@@ -175,7 +175,7 @@ function question6 () {
   if (favGuess === 0){
     alert('Sorry about your luck ' + username + ', you are out of guesses and my favorite number is 16.');
   }
-  console.log('The user answered ' + guessedNum + ' about my favorite number being 16.')
+  console.log('The user answered ' + guessedNum + ' about my favorite number being 16.');
 }
 question6();
 
@@ -186,21 +186,21 @@ function question7 () {
   while(stateGuess > 0){
     var guessedState = prompt(username + ' can you guess another state I have lived in besides Washington? You will have 6 tries.').toLowerCase();
 
-  for(var i = 0; i < myStates.length; i++){
-    if (myStates[i] === guessedState){
-      alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
-      stateGuess = -1;
-      correctAnswer ++;
-      break;
+    for(var i = 0; i < myStates.length; i++){
+      if (myStates[i] === guessedState){
+        alert('That is correct! I have lived in Indiana, Arizona, California, North Carolina and Georgia');
+        stateGuess = -1;
+        correctAnswer ++;
+        break;
+      }
     }
-  }
     if (stateGuess > 0){
       stateGuess--;
       alert('Sorry that is not a state I have lived in. Try again. You have ' + stateGuess + ' tries remaining.');
     }
 
     if (stateGuess === 0){
-      alert('You are out of guesses!')
+      alert('You are out of guesses!');
     }
   }
   console.log('The user answered ' + guessedState + ' about states I\'ve lived in.');
